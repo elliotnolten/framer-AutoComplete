@@ -1,0 +1,487 @@
+{
+  "root" : {
+    "__class" : "CanvasNode",
+    "children" : [
+      {
+        "__class" : "FrameNode",
+        "aspectRatioLocked" : false,
+        "blendingEnabled" : 0,
+        "blendingMode" : "normal",
+        "blur" : 12,
+        "blurEnabled" : 0,
+        "blurType" : "layer",
+        "borderBottom" : 1,
+        "borderColor" : "#222",
+        "borderEnabled" : 0,
+        "borderLeft" : 1,
+        "borderPerSide" : false,
+        "borderRight" : 1,
+        "borderStyle" : "solid",
+        "borderTop" : 1,
+        "borderWidth" : 1,
+        "bottom" : null,
+        "boxShadows" : [
+
+        ],
+        "brightness" : 100,
+        "brightnessEnabled" : 0,
+        "centerAnchorX" : 0,
+        "centerAnchorY" : 0,
+        "children" : [
+          {
+            "__class" : "FrameNode",
+            "aspectRatioLocked" : false,
+            "blendingEnabled" : 0,
+            "blendingMode" : "normal",
+            "blur" : 12,
+            "blurEnabled" : 0,
+            "blurType" : "layer",
+            "borderBottom" : 1,
+            "borderColor" : "#ccc",
+            "borderEnabled" : 1,
+            "borderLeft" : 1,
+            "borderPerSide" : false,
+            "borderRight" : 1,
+            "borderStyle" : "solid",
+            "borderTop" : 1,
+            "borderWidth" : 1,
+            "bottom" : null,
+            "boxShadows" : [
+
+            ],
+            "brightness" : 100,
+            "brightnessEnabled" : 0,
+            "centerAnchorX" : 0.5,
+            "centerAnchorY" : 0.070652173913043473,
+            "children" : [
+              {
+                "__class" : "TextNode",
+                "autoSize" : false,
+                "blendingEnabled" : 0,
+                "blendingMode" : "normal",
+                "blur" : 12,
+                "blurEnabled" : 0,
+                "blurType" : "layer",
+                "bottom" : null,
+                "brightness" : 100,
+                "brightnessEnabled" : 0,
+                "centerAnchorX" : 0.44764397905759162,
+                "centerAnchorY" : 0.515625,
+                "constraintsLocked" : false,
+                "contrast" : 100,
+                "contrastEnabled" : 0,
+                "editable" : false,
+                "exportOptions" : [
+
+                ],
+                "grayscale" : 0,
+                "grayScaleEnabled" : 0,
+                "height" : 24,
+                "heightFactor" : null,
+                "hueRotate" : 0,
+                "hueRotateEnabled" : 0,
+                "id" : "WKM}8tSc",
+                "invert" : 0,
+                "invertEnabled" : 0,
+                "left" : 20,
+                "locked" : false,
+                "name" : "textOld",
+                "opacity" : 1,
+                "parentid" : "5O#jA$J8",
+                "right" : 60,
+                "rotation" : 0,
+                "saturate" : 100,
+                "saturateEnabled" : 0,
+                "sepia" : 0,
+                "sepiaEnabled" : 0,
+                "shadows" : [
+
+                ],
+                "styledText" : {
+                  "__class" : "StyledTextDraft",
+                  "blocks" : [
+                    {
+                      "data" : {
+                        "emptyStyle" : [
+                          "LETTERSPACING:0",
+                          "SIZE:16",
+                          "COLOR:hsla(0, 0%, 0%, 0.5)",
+                          "LINEHEIGHT:1.5",
+                          "FONT:ProximaNova-Regular"
+                        ]
+                      },
+                      "depth" : 0,
+                      "entityRanges" : [
+
+                      ],
+                      "inlineStyleRanges" : [
+                        {
+                          "length" : 33,
+                          "offset" : 0,
+                          "style" : "LETTERSPACING:0"
+                        },
+                        {
+                          "length" : 33,
+                          "offset" : 0,
+                          "style" : "SIZE:16"
+                        },
+                        {
+                          "length" : 33,
+                          "offset" : 0,
+                          "style" : "COLOR:hsla(0, 0%, 0%, 0.5)"
+                        },
+                        {
+                          "length" : 33,
+                          "offset" : 0,
+                          "style" : "LINEHEIGHT:1.5"
+                        },
+                        {
+                          "length" : 33,
+                          "offset" : 0,
+                          "style" : "FONT:ProximaNova-Regular"
+                        }
+                      ],
+                      "key" : "1n7qa",
+                      "text" : "Zoek op straatnaam of postcode...",
+                      "type" : "unstyled"
+                    }
+                  ],
+                  "cached" : {
+                    "html" : "<span data-offset-key=\"1n7qa-0-0\" style=\"tab-size:4;font-weight:400;font-family:&quot;ProximaNova-Regular&quot;, &quot;Proxima Nova&quot;, serif;-webkit-text-fill-color:hsla(0, 0%, 0%, 0.5);font-size:16px;letter-spacing:0px;line-height:1.5\"><span data-text=\"true\">Zoek op straatnaam of postcode...<\/span><\/span>",
+                    "os" : "10_13",
+                    "size" : {
+                      "height" : 24,
+                      "width" : 303
+                    },
+                    "width" : 302
+                  },
+                  "entityMap" : {
+
+                  }
+                },
+                "targetName" : "textOld",
+                "top" : null,
+                "visible" : true,
+                "width" : 302,
+                "widthFactor" : null
+              }
+            ],
+            "clip" : false,
+            "constraintsLocked" : false,
+            "contrast" : 100,
+            "contrastEnabled" : 0,
+            "deviceType" : null,
+            "exportIncludesBackground" : true,
+            "exportOptions" : [
+
+            ],
+            "fillColor" : "hsla(0, 0%, 100%, 0.5)",
+            "fillEnabled" : true,
+            "fillGradient" : {
+              "__class" : "LinearGradient",
+              "alpha" : 1,
+              "angle" : 0,
+              "end" : "rgba(0,0,0,0)",
+              "start" : "black"
+            },
+            "fillImage" : null,
+            "fillImagePixelHeight" : null,
+            "fillImagePixelWidth" : null,
+            "fillImageResize" : "fill",
+            "fillType" : "color",
+            "grayscale" : 0,
+            "grayScaleEnabled" : 0,
+            "height" : 64,
+            "heightFactor" : null,
+            "hueRotate" : 0,
+            "hueRotateEnabled" : 0,
+            "id" : "5O#jA$J8",
+            "intrinsicHeight" : null,
+            "intrinsicWidth" : null,
+            "invert" : 0,
+            "invertEnabled" : 0,
+            "left" : 16,
+            "locked" : false,
+            "name" : "inputOld",
+            "opacity" : 1,
+            "parentid" : "NKtlhTiS",
+            "radius" : 2,
+            "radiusBottomLeft" : 2,
+            "radiusBottomRight" : 2,
+            "radiusIsRelative" : false,
+            "radiusPerCorner" : false,
+            "radiusTopLeft" : 2,
+            "radiusTopRight" : 2,
+            "right" : 16,
+            "rotation" : 0,
+            "saturate" : 100,
+            "saturateEnabled" : 0,
+            "sepia" : 0,
+            "sepiaEnabled" : 0,
+            "targetName" : "inputOld",
+            "top" : 20,
+            "visible" : true,
+            "width" : 382,
+            "widthFactor" : null
+          },
+          {
+            "__class" : "FrameNode",
+            "aspectRatioLocked" : false,
+            "blendingEnabled" : 0,
+            "blendingMode" : "normal",
+            "blur" : 12,
+            "blurEnabled" : 0,
+            "blurType" : "layer",
+            "borderBottom" : 1,
+            "borderColor" : "#ccc",
+            "borderEnabled" : 1,
+            "borderLeft" : 1,
+            "borderPerSide" : false,
+            "borderRight" : 1,
+            "borderStyle" : "solid",
+            "borderTop" : 1,
+            "borderWidth" : 1,
+            "bottom" : null,
+            "boxShadows" : [
+
+            ],
+            "brightness" : 100,
+            "brightnessEnabled" : 0,
+            "centerAnchorX" : 0.5,
+            "centerAnchorY" : 0.22554347826086957,
+            "children" : [
+              {
+                "__class" : "TextNode",
+                "autoSize" : false,
+                "blendingEnabled" : 0,
+                "blendingMode" : "normal",
+                "blur" : 12,
+                "blurEnabled" : 0,
+                "blurType" : "layer",
+                "bottom" : null,
+                "brightness" : 100,
+                "brightnessEnabled" : 0,
+                "centerAnchorX" : 0.44764397905759162,
+                "centerAnchorY" : 0.515625,
+                "constraintsLocked" : false,
+                "contrast" : 100,
+                "contrastEnabled" : 0,
+                "editable" : false,
+                "exportOptions" : [
+
+                ],
+                "grayscale" : 0,
+                "grayScaleEnabled" : 0,
+                "height" : 24,
+                "heightFactor" : null,
+                "hueRotate" : 0,
+                "hueRotateEnabled" : 0,
+                "id" : "tLkPaQj6e",
+                "invert" : 0,
+                "invertEnabled" : 0,
+                "left" : 20,
+                "locked" : false,
+                "name" : "textNew",
+                "opacity" : 1,
+                "parentid" : "HmzvjsKYf",
+                "right" : 60,
+                "rotation" : 0,
+                "saturate" : 100,
+                "saturateEnabled" : 0,
+                "sepia" : 0,
+                "sepiaEnabled" : 0,
+                "shadows" : [
+
+                ],
+                "styledText" : {
+                  "__class" : "StyledTextDraft",
+                  "blocks" : [
+                    {
+                      "data" : {
+                        "emptyStyle" : [
+                          "LETTERSPACING:0",
+                          "SIZE:16",
+                          "COLOR:hsla(0, 0%, 0%, 0.5)",
+                          "LINEHEIGHT:1.5",
+                          "FONT:ProximaNova-Regular"
+                        ]
+                      },
+                      "depth" : 0,
+                      "entityRanges" : [
+
+                      ],
+                      "inlineStyleRanges" : [
+                        {
+                          "length" : 33,
+                          "offset" : 0,
+                          "style" : "LETTERSPACING:0"
+                        },
+                        {
+                          "length" : 33,
+                          "offset" : 0,
+                          "style" : "SIZE:16"
+                        },
+                        {
+                          "length" : 33,
+                          "offset" : 0,
+                          "style" : "COLOR:hsla(0, 0%, 0%, 0.5)"
+                        },
+                        {
+                          "length" : 33,
+                          "offset" : 0,
+                          "style" : "LINEHEIGHT:1.5"
+                        },
+                        {
+                          "length" : 33,
+                          "offset" : 0,
+                          "style" : "FONT:ProximaNova-Regular"
+                        }
+                      ],
+                      "key" : "1n7qa",
+                      "text" : "Zoek op straatnaam of postcode...",
+                      "type" : "unstyled"
+                    }
+                  ],
+                  "cached" : {
+                    "html" : "<span data-offset-key=\"1n7qa-0-0\" style=\"tab-size:4;font-weight:400;font-family:&quot;ProximaNova-Regular&quot;, &quot;Proxima Nova&quot;, serif;-webkit-text-fill-color:hsla(0, 0%, 0%, 0.5);font-size:16px;letter-spacing:0px;line-height:1.5\"><span data-text=\"true\">Zoek op straatnaam of postcode...<\/span><\/span>",
+                    "os" : "10_13",
+                    "size" : {
+                      "height" : 24,
+                      "width" : 303
+                    },
+                    "width" : 302
+                  },
+                  "entityMap" : {
+
+                  }
+                },
+                "targetName" : "textNew",
+                "top" : null,
+                "visible" : true,
+                "width" : 302,
+                "widthFactor" : null
+              }
+            ],
+            "clip" : false,
+            "constraintsLocked" : false,
+            "contrast" : 100,
+            "contrastEnabled" : 0,
+            "deviceType" : null,
+            "exportIncludesBackground" : true,
+            "exportOptions" : [
+
+            ],
+            "fillColor" : "hsla(0, 0%, 100%, 0.5)",
+            "fillEnabled" : true,
+            "fillGradient" : {
+              "__class" : "LinearGradient",
+              "alpha" : 1,
+              "angle" : 0,
+              "end" : "rgba(0,0,0,0)",
+              "start" : "black"
+            },
+            "fillImage" : null,
+            "fillImagePixelHeight" : null,
+            "fillImagePixelWidth" : null,
+            "fillImageResize" : "fill",
+            "fillType" : "color",
+            "grayscale" : 0,
+            "grayScaleEnabled" : 0,
+            "height" : 64,
+            "heightFactor" : null,
+            "hueRotate" : 0,
+            "hueRotateEnabled" : 0,
+            "id" : "HmzvjsKYf",
+            "intrinsicHeight" : null,
+            "intrinsicWidth" : null,
+            "invert" : 0,
+            "invertEnabled" : 0,
+            "left" : 16,
+            "locked" : false,
+            "name" : "inputNew",
+            "opacity" : 1,
+            "parentid" : "NKtlhTiS",
+            "radius" : 2,
+            "radiusBottomLeft" : 2,
+            "radiusBottomRight" : 2,
+            "radiusIsRelative" : false,
+            "radiusPerCorner" : false,
+            "radiusTopLeft" : 2,
+            "radiusTopRight" : 2,
+            "right" : 16,
+            "rotation" : 0,
+            "saturate" : 100,
+            "saturateEnabled" : 0,
+            "sepia" : 0,
+            "sepiaEnabled" : 0,
+            "targetName" : "inputNew",
+            "top" : 134,
+            "visible" : true,
+            "width" : 382,
+            "widthFactor" : null
+          }
+        ],
+        "clip" : true,
+        "constraintsLocked" : false,
+        "contrast" : 100,
+        "contrastEnabled" : 0,
+        "deviceType" : "apple-iphone-8-plus-space-gray",
+        "exportIncludesBackground" : true,
+        "exportOptions" : [
+
+        ],
+        "fillColor" : "#ffffff",
+        "fillEnabled" : true,
+        "fillGradient" : {
+          "__class" : "LinearGradient",
+          "alpha" : 1,
+          "angle" : 0,
+          "end" : "rgba(0,0,0,0)",
+          "start" : "black"
+        },
+        "fillImage" : null,
+        "fillImagePixelHeight" : null,
+        "fillImagePixelWidth" : null,
+        "fillImageResize" : "fill",
+        "fillType" : "color",
+        "grayscale" : 0,
+        "grayScaleEnabled" : 0,
+        "height" : 736,
+        "heightFactor" : null,
+        "hueRotate" : 0,
+        "hueRotateEnabled" : 0,
+        "id" : "NKtlhTiS",
+        "intrinsicHeight" : null,
+        "intrinsicWidth" : null,
+        "invert" : 0,
+        "invertEnabled" : 0,
+        "left" : 0,
+        "locked" : false,
+        "name" : "search",
+        "opacity" : 1,
+        "parentid" : "%30h0*X|",
+        "radius" : 0,
+        "radiusBottomLeft" : 0,
+        "radiusBottomRight" : 0,
+        "radiusIsRelative" : false,
+        "radiusPerCorner" : false,
+        "radiusTopLeft" : 0,
+        "radiusTopRight" : 0,
+        "right" : null,
+        "rotation" : 0,
+        "saturate" : 100,
+        "saturateEnabled" : 0,
+        "sepia" : 0,
+        "sepiaEnabled" : 0,
+        "targetName" : "search",
+        "top" : 0,
+        "visible" : true,
+        "width" : 414,
+        "widthFactor" : null
+      }
+    ],
+    "id" : "%30h0*X|",
+    "parentid" : null
+  },
+  "version" : 21
+}
