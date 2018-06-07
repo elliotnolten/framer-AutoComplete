@@ -20,10 +20,13 @@ class ResultItem extends Layer
 				overflow: "hidden"
 				textOverflow: "ellipsis"
 			backgroundColor: "white"
+			resultID: ""
 			result: ""
 			resultHighlighted: ""
 
+		@resultID = options.resultID
 		@result = options.result
+		@resultHighlighted = options.resultHighlighted
 
 class exports.AutoSuggest extends Layer
 
@@ -94,6 +97,7 @@ class exports.AutoSuggest extends Layer
 						height: 48
 						y: 48 * index
 						# Fill the item with the highlighted suggestion
+						resultID: id
 						html: highlighting[id].suggest
 						result: result.weergavenaam
 
@@ -104,7 +108,7 @@ class exports.AutoSuggest extends Layer
 					item.onTap ->
 						input.value = @result
 						autoSuggestContainer.result = @result
-						autoSuggestContainer.resultHighlighted = highlighting[id].suggest
+						autoSuggestContainer.resultHighlighted = highlighting[@resultID].suggest
 
 						# Hide the autoSuggestContainer
 						autoSuggestContainer.sendToBack()
