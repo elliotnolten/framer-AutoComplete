@@ -107,7 +107,7 @@
                           "SIZE:16",
                           "COLOR:hsla(0, 0%, 0%, 0.5)",
                           "LINEHEIGHT:1.5",
-                          "FONT:ProximaNova-Regular"
+                          "FONT:Helvetica"
                         ]
                       },
                       "depth" : 0,
@@ -138,7 +138,7 @@
                         {
                           "length" : 33,
                           "offset" : 0,
-                          "style" : "FONT:ProximaNova-Regular"
+                          "style" : "FONT:Helvetica"
                         }
                       ],
                       "key" : "1n7qa",
@@ -147,7 +147,7 @@
                     }
                   ],
                   "cached" : {
-                    "html" : "<span data-offset-key=\"1n7qa-0-0\" style=\"tab-size:4;font-weight:400;font-family:&quot;ProximaNova-Regular&quot;, &quot;Proxima Nova&quot;, serif;-webkit-text-fill-color:hsla(0, 0%, 0%, 0.5);font-size:16px;letter-spacing:0px;line-height:1.5\"><span data-text=\"true\">Zoek op straatnaam of postcode...<\/span><\/span>",
+                    "html" : "<span data-offset-key=\"1n7qa-0-0\" style=\"tab-size:4;font-weight:400;font-family:&quot;Helvetica&quot;, sans-serif;-webkit-text-fill-color:hsla(0, 0%, 0%, 0.5);font-size:16px;letter-spacing:0px;line-height:1.5\"><span data-text=\"true\">Zoek op straatnaam of postcode...<\/span><\/span>",
                     "os" : "10_13",
                     "size" : {
                       "height" : 24,
@@ -303,7 +303,7 @@
                           "SIZE:16",
                           "COLOR:hsla(0, 0%, 0%, 0.5)",
                           "LINEHEIGHT:1.5",
-                          "FONT:ProximaNova-Regular"
+                          "FONT:Helvetica"
                         ]
                       },
                       "depth" : 0,
@@ -334,7 +334,7 @@
                         {
                           "length" : 33,
                           "offset" : 0,
-                          "style" : "FONT:ProximaNova-Regular"
+                          "style" : "FONT:Helvetica"
                         }
                       ],
                       "key" : "1n7qa",
@@ -343,7 +343,7 @@
                     }
                   ],
                   "cached" : {
-                    "html" : "<span data-offset-key=\"1n7qa-0-0\" style=\"tab-size:4;font-weight:400;font-family:&quot;ProximaNova-Regular&quot;, &quot;Proxima Nova&quot;, serif;-webkit-text-fill-color:hsla(0, 0%, 0%, 0.5);font-size:16px;letter-spacing:0px;line-height:1.5\"><span data-text=\"true\">Zoek op straatnaam of postcode...<\/span><\/span>",
+                    "html" : "<span data-offset-key=\"1n7qa-0-0\" style=\"tab-size:4;font-weight:400;font-family:&quot;Helvetica&quot;, sans-serif;-webkit-text-fill-color:hsla(0, 0%, 0%, 0.5);font-size:16px;letter-spacing:0px;line-height:1.5\"><span data-text=\"true\">Zoek op straatnaam of postcode...<\/span><\/span>",
                     "os" : "10_13",
                     "size" : {
                       "height" : 24,

@@ -31,21 +31,26 @@ exports.autoSuggest = (input, maxResults) ->
 			searchSuggestions.visible = true
 			endpoint = Utils.domLoadJSONSync pdokURL + input.value + " and type:adres"
 			results = endpoint.response.docs
+			highlighting = endpoint.highlighting
+
 			
 			for result, index in results[0...maxResults]
-				item = new TextLayer
+				id = result.id
+				item = new Layer
 					parent: searchSuggestions
 					width: searchSuggestions.width
 					height: 48
-					text: result.weergavenaam
-					fontSize: 16
-					lineHeight: 24 / 16
-					color: "#333"
-					padding: top: 10, left: 16, right: 16
-					truncate: true
+					html: highlighting[id].suggest
+					style:
+						fontSize: "16px"
+						lineHeight: "#{48 / 16}px"
+						color: "#333"
+						paddingTop: "20px"
+						paddingLeft: "16px"
+						paddingRight: "16px"
+						borderBottom: "1px solid #ccc"
 					y: 48 * index
 					backgroundColor: "white"
-					style: borderBottom: "1px solid #ccc"
 				
 				if index is maxResults - 1
 					item.style.borderBottom = ""
@@ -55,7 +60,7 @@ exports.autoSuggest = (input, maxResults) ->
 				searchSuggestions.height = resultsHeight
 				
 				item.onClick ->
-					input.value = @text
+					input.value = result.weergavenaam
 					searchSuggestions.sendToBack()
 					searchSuggestions.visible = false
 			
