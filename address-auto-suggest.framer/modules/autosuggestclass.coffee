@@ -20,7 +20,8 @@ class ResultItem extends Layer
 				overflow: "hidden"
 				textOverflow: "ellipsis"
 			backgroundColor: "white"
-			result: "Voorbeeld"
+			result: ""
+			resultHighlighted: ""
 
 		@result = options.result
 
@@ -102,6 +103,8 @@ class exports.autoSuggest extends Layer
 					# Tapping an item puts its value into the input field and triggers the resultSelected Event
 					item.onTap ->
 						input.value = @result
+						autoSuggestContainer.result = @result
+						autoSuggestContainer.resultHighlighted = highlighting[id].suggest
 
 						# Hide the autoSuggestContainer
 						autoSuggestContainer.sendToBack()
