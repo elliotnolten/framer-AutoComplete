@@ -1,5 +1,11 @@
-exports.autoSuggest = (input, maxResults) ->
+exports.autoSuggest = (input, maxResults, type) ->
 	
+	# Set defaults
+	maxResults = 5 if maxResults is null
+	
+	# Type can be gemeente, woonplaats, weg, postcode, adres, hectometerpaal, or perceel.
+	type = "adres" if type is null
+
 	# Search suggestion Layer
 	searchSuggestions = new Layer
 		width: input.width
@@ -29,7 +35,7 @@ exports.autoSuggest = (input, maxResults) ->
 			searchSuggestions.bringToFront()
 			searchSuggestions.y = input.screenFrame.y + input.height + 8
 			searchSuggestions.visible = true
-			endpoint = Utils.domLoadJSONSync pdokURL + input.value + " and type:adres"
+			endpoint = Utils.domLoadJSONSync pdokURL + input.value + " and type:#{type}"
 			results = endpoint.response.docs
 			highlighting = endpoint.highlighting
 
@@ -45,10 +51,14 @@ exports.autoSuggest = (input, maxResults) ->
 						fontSize: "16px"
 						lineHeight: "#{48 / 16}px"
 						color: "#333"
-						paddingTop: "20px"
+						paddingTop: "24px"
 						paddingLeft: "16px"
 						paddingRight: "16px"
 						borderBottom: "1px solid #ccc"
+						width: "#{input.width - 32}px"
+						whiteSpace: "nowrap"
+						overflow: "hidden"
+						textOverflow: "ellipsis"
 					y: 48 * index
 					backgroundColor: "white"
 				
