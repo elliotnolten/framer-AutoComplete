@@ -11,14 +11,14 @@ exports.autoSuggest = (input, maxResults, type) ->
 		width: input.width
 		height: 0
 		x: Align.center
-		y: input.maxY
+		y: input.maxY + 8
 		backgroundColor: null
 		shadowColor: "rgba(0,0,0,0.2)"
 		shadowY: 1
 		shadowBlur: 3
 		borderColor: "#ededed"
 		visible: false
-	searchSuggestions.sendToBack()
+	# searchSuggestions.sendToBack()
 
 	# Create item Class
 	class resultItem extends Layer
@@ -55,7 +55,7 @@ exports.autoSuggest = (input, maxResults, type) ->
 			
 		if input.value.length >= 2
 			searchSuggestions.bringToFront()
-			searchSuggestions.y = input.screenFrame.y + input.height + 8
+			# searchSuggestions.y = input.screenFrame.y + input.height + 8
 			searchSuggestions.visible = true
 			endpoint = Utils.domLoadJSONSync pdokURL + input.value + " and type:#{type}"
 			results = endpoint.response.docs
@@ -72,7 +72,7 @@ exports.autoSuggest = (input, maxResults, type) ->
 					y: 48 * index
 					html: highlighting[id].suggest
 					result: result.weergavenaam
-				
+
 				if index is maxResults - 1
 					item.style.borderBottom = ""
 				
@@ -81,10 +81,10 @@ exports.autoSuggest = (input, maxResults, type) ->
 				searchSuggestions.height = resultsHeight
 				
 				item.onTap ->
-					console.log @result
 					input.value = @result
 					searchSuggestions.sendToBack()
 					searchSuggestions.visible = false
+
 			
 			input.onInputBlur ->
 				searchSuggestions.sendToBack()

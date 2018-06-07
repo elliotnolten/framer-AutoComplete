@@ -1,6 +1,5 @@
 {InputLayer} = require "input"
-
-autoSuggestModule = require "autosuggest"
+{autoSuggest} = require "autosuggestclass"
 
 flow = new FlowComponent
 flow.showNext(search)
@@ -9,6 +8,7 @@ flow.showNext(search)
 searchInputOld = InputLayer.wrap(inputOld,textOld)
 searchInputNew = InputLayer.wrap(inputNew,textNew)
 
+autoSuggestOld = new autoSuggest input: searchInputOld
 
-autoSuggestModule.autoSuggest(searchInputOld, 2, "adres")
-autoSuggestModule.autoSuggest(searchInputNew, 3, "woonplaats")
+autoSuggestOld.on Events.ResultSelected, ->
+	print "Event Listened"
