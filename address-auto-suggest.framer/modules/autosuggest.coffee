@@ -20,6 +20,28 @@ exports.autoSuggest = (input, maxResults, type) ->
 		visible: false
 	searchSuggestions.sendToBack()
 
+	# Create item Class
+	class resultItem extends Layer
+		constructor: (options) ->
+			super _.defaults options,
+				style:
+					fontSize: "16px"
+					lineHeight: "#{48 / 16}px"
+					color: "#333"
+					paddingTop: "24px"
+					paddingLeft: "16px"
+					paddingRight: "16px"
+					borderBottom: "1px solid #ccc"
+					whiteSpace: "nowrap"
+					overflow: "hidden"
+					textOverflow: "ellipsis"
+				backgroundColor: "white"
+				result: "Voorbeeld"
+
+			@result = options.result
+
+
+
 	# PDOK
 	pdokURL = "https://geodata.nationaalgeoregister.nl/locatieserver/v3/suggest?q="
 	
@@ -42,25 +64,14 @@ exports.autoSuggest = (input, maxResults, type) ->
 			
 			for result, index in results[0...maxResults]
 				id = result.id
-				item = new Layer
+
+				item = new resultItem
 					parent: searchSuggestions
 					width: searchSuggestions.width
 					height: 48
-					html: highlighting[id].suggest
-					style:
-						fontSize: "16px"
-						lineHeight: "#{48 / 16}px"
-						color: "#333"
-						paddingTop: "24px"
-						paddingLeft: "16px"
-						paddingRight: "16px"
-						borderBottom: "1px solid #ccc"
-						width: "#{input.width - 32}px"
-						whiteSpace: "nowrap"
-						overflow: "hidden"
-						textOverflow: "ellipsis"
 					y: 48 * index
-					backgroundColor: "white"
+					html: highlighting[id].suggest
+					result: result.weergavenaam
 				
 				if index is maxResults - 1
 					item.style.borderBottom = ""
@@ -69,8 +80,9 @@ exports.autoSuggest = (input, maxResults, type) ->
 				
 				searchSuggestions.height = resultsHeight
 				
-				item.onClick ->
-					input.value = result.weergavenaam
+				item.onTap ->
+					console.log @result
+					input.value = @result
 					searchSuggestions.sendToBack()
 					searchSuggestions.visible = false
 			
