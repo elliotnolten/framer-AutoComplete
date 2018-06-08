@@ -1,4 +1,4 @@
-# Framer AutoSuggest
+# Framer AutoComplete
 A module for searching Dutch addresses.
 
 ## How it works

@@ -28,7 +28,7 @@ class ResultItem extends Layer
 		@result = options.result
 		@resultHighlighted = options.resultHighlighted
 
-class exports.AutoSuggest extends Layer
+class exports.AutoComplete extends Layer
 
 	constructor: (options) ->
 		super _.defaults options,
@@ -48,32 +48,32 @@ class exports.AutoSuggest extends Layer
 
 
 		# Store the options into new variables for later use
-		autoSuggestContainer = @
+		autoCompleteContainer = @
 		type = @type
 		maxResults = @maxResults
 
-		# Position the autoSuggest
+		# Position the autoComplete
 		@x = @input.x + 1
 		@y = @input.maxY + 8
 		@width = @input.width - 2
 		@sendToBack()
 
-		# Show auto suggestions while typing
+		# Show auto Completeions while typing
 		@input.onValueChange ->
 
 			input = @
 
-			# Reset the height of the autoSuggestContainer to 0
-			autoSuggestContainer.height = 0
+			# Reset the height of the autoCompleteContainer to 0
+			autoCompleteContainer.height = 0
 
-			# First destroy all children of the autoSuggestContainer
-			item.destroy() for item in autoSuggestContainer.children
+			# First destroy all children of the autoCompleteContainer
+			item.destroy() for item in autoCompleteContainer.children
 
 			# Only show something when there are 2 characters or more
 			if @value.length >= 2
 
-				# First show the autoSuggest container
-				autoSuggestContainer.bringToFront()
+				# First show the autoComplete container
+				autoCompleteContainer.bringToFront()
 
 				# Then load the data from the PDOK endpoint
 				endpoint = Utils.domLoadJSONSync pdokURL + @value + " and type:#{type}"
@@ -92,8 +92,8 @@ class exports.AutoSuggest extends Layer
 
 					# Create the items
 					item = new ResultItem
-						parent: autoSuggestContainer
-						width: autoSuggestContainer.width
+						parent: autoCompleteContainer
+						width: autoCompleteContainer.width
 						height: 48
 						y: 48 * index
 						# Fill the item with the highlighted suggestion
@@ -101,18 +101,18 @@ class exports.AutoSuggest extends Layer
 						html: highlighting[id].suggest
 						result: result.weergavenaam
 
-					# For each result add up 48px to the height of the autoSuggestContainer
-					autoSuggestContainer.height += 48
+					# For each result add up 48px to the height of the autoCompleteContainer
+					autoCompleteContainer.height += 48
 
 					# Tapping an item puts its value into the input field and triggers the resultSelected Event
 					item.onTap ->
 						input.value = @result
-						autoSuggestContainer.result = @result
-						autoSuggestContainer.resultHighlighted = highlighting[@resultID].suggest
+						autoCompleteContainer.result = @result
+						autoCompleteContainer.resultHighlighted = highlighting[@resultID].suggest
 
-						# Hide the autoSuggestContainer
-						autoSuggestContainer.sendToBack()
-						autoSuggestContainer.emit(Events.ResultSelected, event)
+						# Hide the autoCompleteContainer
+						autoCompleteContainer.sendToBack()
+						autoCompleteContainer.emit(Events.ResultSelected, event)
 
 
 
