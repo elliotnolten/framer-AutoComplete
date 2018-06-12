@@ -1,5 +1,6 @@
 # Custom Events
 Events.ResultSelected = "ResultSelected"
+Events.ResultGenerated = "ResultGenerated"
 
 # PDOK
 pdokURL = "https://geodata.nationaalgeoregister.nl/locatieserver/v3/suggest?q="
@@ -8,18 +9,6 @@ pdokURL = "https://geodata.nationaalgeoregister.nl/locatieserver/v3/suggest?q="
 class ResultItem extends Layer
 	constructor: (options) ->
 		super _.defaults options,
-			style:
-				fontSize: "16px"
-				lineHeight: "#{48 / 16}px"
-				color: "#333"
-				paddingTop: "24px"
-				paddingLeft: "16px"
-				paddingRight: "16px"
-				borderBottom: "1px solid #ccc"
-				whiteSpace: "nowrap"
-				overflow: "hidden"
-				textOverflow: "ellipsis"
-			backgroundColor: "white"
 			resultID: ""
 			result: ""
 			resultHighlighted: ""
@@ -41,21 +30,36 @@ class exports.AutoComplete extends Layer
 			shadowY: 1
 			shadowBlur: 8
 			borderColor: "#ededed"
+			resultStyle:
+				fontSize: "16px"
+				lineHeight: "#{48 / 16}px"
+				color: "#333"
+				paddingTop: "24px"
+				paddingLeft: "16px"
+				paddingRight: "16px"
+				borderBottom: "1px solid #ccc"
+				color: "#333"
+				whiteSpace: "nowrap"
+				overflow: "hidden"
+				textOverflow: "ellipsis"
+				backgroundColor: "white"
 
 		@input = options.input
 		@maxResults = options.maxResults
 		@type = options.type
+		@resultStyle = options.resultStyle
 
 
 		# Store the options into new variables for later use
 		autoCompleteContainer = @
 		type = @type
 		maxResults = @maxResults
+		styleResults = @resultStyle
 
 		# Position the autoComplete
-		@x = @input.x + 1
-		@y = @input.maxY + 8
-		@width = @input.width - 2
+		@_x = @input.screenFrame.x + 1
+		@_y = @input.screenFrame.y + @input.height + 8
+		@_width = @input.width - 2
 		@sendToBack()
 
 		# Show auto Completeions while typing
@@ -84,6 +88,9 @@ class exports.AutoComplete extends Layer
 				# And highlighted results
 				highlighting = endpoint.highlighting
 
+				# Emit the ResultGenerated Event
+				autoCompleteContainer.emit(Events.ResultGenerated, event)
+
 				# Loop through the results and show the results in a list
 				for result, index in results[0...maxResults]
 
@@ -100,6 +107,13 @@ class exports.AutoComplete extends Layer
 						resultID: id
 						html: highlighting[id].suggest
 						result: result.weergavenaam
+						style:
+							styleResults
+					# Remove border from last item
+					if index == maxResults - 1
+						item.style.borderBottom = "none"
+
+
 
 					# For each result add up 48px to the height of the autoCompleteContainer
 					autoCompleteContainer.height += 48

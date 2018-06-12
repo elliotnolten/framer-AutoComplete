@@ -9,14 +9,14 @@
   "deviceType" : "apple-iphone-8-gold",
   "sharedPrototype" : true,
   "propertyPanelToggleStates" : {
-
+    "Filters" : false
   },
   "projectId" : "B4EFCBDD-714F-47D2-87B6-13832A0C7D24",
   "deviceOrientation" : 0,
   "selectedHand" : "iphone-hands-1",
   "showBezel" : true,
   "foldedCodeRanges" : [
-
+    "{264, 6736}"
   ],
   "deviceScale" : "fit"
 }
