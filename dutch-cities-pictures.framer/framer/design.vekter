@@ -2422,7 +2422,7 @@
 
                 ],
                 "fillColor" : "rgb(255, 255, 255)",
-                "fillEnabled" : false,
+                "fillEnabled" : true,
                 "fillGradient" : {
                   "__class" : "LinearGradient",
                   "alpha" : 1,
