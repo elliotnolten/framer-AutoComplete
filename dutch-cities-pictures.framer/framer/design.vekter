@@ -1248,7 +1248,6 @@
                 "brightnessEnabled" : 0,
                 "centerAnchorX" : 0.5,
                 "centerAnchorY" : 0.5,
-                "clip" : false,
                 "colorable" : true,
                 "constraintsLocked" : false,
                 "contrast" : 100,
@@ -2389,18 +2388,18 @@
                             }
                           ],
                           "key" : "1n7qa",
-                          "text" : "Zoek op plaatsnaam of gemeente",
+                          "text" : "Zoek op woonplaats of gemeente",
                           "type" : "unstyled"
                         }
                       ],
                       "cached" : {
-                        "html" : "<span data-offset-key=\"1n7qa-0-0\" style=\"tab-size:4;font-weight:400;font-family:&quot;SFCompactText-Regular&quot;, &quot;.SFCompactText-Regular&quot;, serif;-webkit-text-fill-color:hsla(0, 0%, 0%, 0.5);font-size:16px;letter-spacing:0.41px;line-height:1.5\"><span data-text=\"true\">Zoek op plaatsnaam of gemeente<\/span><\/span>",
+                        "html" : "<span data-offset-key=\"1n7qa-0-0\" style=\"tab-size:4;font-weight:400;font-family:&quot;SFCompactText-Regular&quot;, &quot;.SFCompactText-Regular&quot;, serif;-webkit-text-fill-color:hsla(0, 0%, 0%, 0.5);font-size:16px;letter-spacing:0.41px;line-height:1.5\"><span data-text=\"true\">Zoek op woonplaats of gemeente<\/span><\/span>",
                         "os" : "10_13",
                         "size" : {
                           "height" : 24,
-                          "width" : 296
+                          "width" : 290
                         },
-                        "width" : 295
+                        "width" : 289
                       },
                       "entityMap" : {
 
@@ -2510,7 +2509,6 @@
                     "brightnessEnabled" : 0,
                     "centerAnchorX" : 0.5,
                     "centerAnchorY" : 0.5,
-                    "clip" : false,
                     "colorable" : true,
                     "constraintsLocked" : false,
                     "contrast" : 100,

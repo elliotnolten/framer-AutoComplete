@@ -406,6 +406,7 @@ autoCompleteAddress = new AutoComplete
 	parent: inputContainer
 	input: input
 	type: "gemeente"
+	maxResults: 10
 	borderRadius: 0
 	shadowBlur: 0
 	clip: true
