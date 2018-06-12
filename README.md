@@ -7,12 +7,17 @@ This module is built up the [InputLayer](https://github.com/benjamindenboer/Fram
 
 
 ### Step 2. Design a nice input field in the Design tab and wrap it with the InputLayer
+
 ```Javascript
 input = InputLayer.wrap(inputAddress,textAddress)
 ```
 
+![Design a nice input field](https://raw.githubusercontent.com/elliotnolten/framer-AutoComplete/master/step2.png)
+
+
 ### Step 3. Create an instance of AutoComplete
 Make sure that you set the right `input`, `type` ([See what types are available](#Types)) and `maxResults`.
+
 ```Javascript
 autoCompleteAddress = new AutoComplete
 	input: input
@@ -22,6 +27,10 @@ autoCompleteAddress = new AutoComplete
 
 ## Example
 This prototype searches on the Unsplash site for a picture of your favorite Dutch city.
+
+![Example](https://raw.githubusercontent.com/elliotnolten/framer-AutoComplete/master/dutch-cities-pictures.png)
+
+
 https://framer.cloud/SaaXt
 
 
